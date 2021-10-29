@@ -1,7 +1,7 @@
 import "./App.css";
 import Header from "./components/Header";
 import AddTasks from "./components/AddTasks";
-import TasksArea from "./components/TasksArea";
+import Tasks from "./components/TasksArea";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
        <div className="content">
       <Header />
       <AddTasks />
-      <TasksArea />
+      <Tasks />
        </div>
       </header>
     </div>
