@@ -79,5 +79,41 @@
   border-radius: 5px;
 }
 
+.btn_remove_task {
+  background-color: red;
+  color: white;
+  height: 35px;
+  width: fit-content;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.btn_mark_complete {
+  color: black;
+  height: 35px;
+  width: fit-content;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.div_tasks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.div_buttons {
+  justify-self: center;
+  display: flex;
+  width: 25%;
+}
+
+.task_name {
+  font-size: small;
+}
+
+.tasks_area_heading {
+  font: medium bold;
+}
+
 
 
