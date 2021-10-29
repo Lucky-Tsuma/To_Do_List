@@ -7,8 +7,7 @@ const toDoReducer = (state = initialState, { type, payload }) => {
         case ADD_TODO:
             return [...state, payload];
         case REMOVE_TODO:
-            // return statement needs fixing
-            return state.filter((todo) => todo.id !== payload);
+            return state.filter((todo) => todo.id != payload);
         default:
             return state;
     }
