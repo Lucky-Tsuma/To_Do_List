@@ -16,7 +16,8 @@ function Tasks () {
                         <p className="task_name" key={task.id} style={{ textDecoration: task.is_complete ? "line-through" : "" }}>{task.title}</p>
                         <div className="div_buttons">
                         <button className="btn_remove_task" onClick={() => dispatch(removeToDo(task.id))}>Remove Task</button>
-                        <button className="btn_mark_complete" onClick={() => dispatch(markComplete(task.id))}>Mark Complete</button>
+                        <button className="btn_mark_complete" onClick={() => dispatch(markComplete(task.id))}>{task.is_complete ? "Mark Incomplete" : "Mark Complete"}</button>
+                        
                         </div>
                 </div>
                 ))}
