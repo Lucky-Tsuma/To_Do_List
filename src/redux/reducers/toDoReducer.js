@@ -11,7 +11,9 @@ const toDoReducer = (state = initialState, { type, payload }) => {
         case MARK_COMPLETE:
             console.log(state);
             return state.map((todo) => {
-                if (todo.id === payload) todo.is_complete = true;
+                if (todo.id === payload) {
+                    todo.is_complete = !todo.is_complete
+                }
                 return todo;
                 });
         default:
