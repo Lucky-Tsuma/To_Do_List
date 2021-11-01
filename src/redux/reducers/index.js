@@ -1,10 +1,8 @@
 import { combineReducers } from "redux";
-import toDoReducer from "./counterToDoReducer";
-import markCompleteReducer from "./markCompleteActionReducer";
+import toDoReducer from "./toDoReducer";
 
 const rootReducer = combineReducers({
-  toDo: toDoReducer,
-  markComplete: markCompleteReducer,
+  toDo: toDoReducer
 });
 
 export default rootReducer;
