@@ -1,8 +1,7 @@
 import '../App.css';
 import React from 'react';
 import { useSelector, useDispatch } from "react-redux";
-import { removeToDo } from "../redux/actions/counterToDos";
-import { markComplete } from "../redux/actions/markCompleteAction";
+import { removeToDo, markComplete } from "../redux/actions/counterToDos";
 
 function Tasks () {
     const  todos  = useSelector((state) => state.toDo);
